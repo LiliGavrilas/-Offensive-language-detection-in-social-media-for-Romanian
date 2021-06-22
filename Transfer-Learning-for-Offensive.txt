@@ -1,0 +1,91 @@
+--------------------------------------------------------------NULI at SemEval-2019 Task 6: Transfer Learning for Offensive
+-------------------------------------------------------------------Language Detection using Bidirectional Transformers
+
+
+
+3 Departamente :
+	-Ping Liu: Department of Computer Science Illinois Institute of Technology
+	- Wen Li: Department of Linguistics Indiana University
+	-Liang Zou: Department of Mathematics New York University
+	
+Echipa NULI câștigă primul locul  în Sub-task A - Identificarea limbajului ofensator și este pe locul 4 și 18
+											în Sub-sarcina B - Clasificarea automată a tipurilor de ofense 
+											și Sub-sarcina C - Identificarea țintei .
+
+
+
+
+ Identificarea și clasificarea limbajului jignitor în social media organizatorii au colectat tweet-uri prin intermediul API-ului Twitter și le-au adnotat ierarhic în ceea ce privește limbajul 
+ jignitor, tipul de infracțiune și ținta.
+ Sarcina este împărțită în trei sub-sarcini: 
+a) detectarea dacă un post este ofensatorsau nu ; 
+b) identificarea tipului de infracțiune al unui post ofensiv ca  țintită (TIN), amenințare țintită (TTH) sau nețintită (UNT);
+ c) pentru un post etichetat ca TIN / TTH în sub-sarcina B,
+ identificând ținta infracțiunii ca individ (IND), grup de persoane (GRP), organizație sau entitate (ORG) sau altul (OTH).
+ Cele trei sub-sarcini sunt evaluate independent de metrica macro-F1.
+Provocările acestei sarcini partajate includ: a) un set de date relativ mic face dificilă instruirea modelelor complexe; b) caracteristicile limbajului pe rețelele de socializare pun dificultăți, cum ar fi cuvintele în afara vocabularului și propozițiile ungramatice;
+c) distribuția claselor țintă este dezechilibrată și incompatibilă între datele de antrenament și cele de testare. La abordează problema cuvintelor în afara vocabularului mai ales emoji și hashtag-uri, le preprocesăm fiecare
+tweet interpretând emoji ca fraze englezești semnificative și segmentând hashtag-urile în spațiu cuvinte separate. Clasificatorii pe care îi experimentăm cu include: model liniar cu caracteristici ale cuvântului unigrams, word2vec și Hatebase; bazat pe cuvinte
+	   
+	   În sarcină comună privind identificarea agresivității organizată ca parte a primului atelier de lucru despre trolling, agresivitate și intimidare cibernetică (TRAC - 1) la COLING 2018, n-grame de cuvinte / caractere și încorporări de cuvinte au fost caracteristicile cele mai utilizate
+printre participanți și cei mai populari clasificatori au fost SVM, LSTM și RNN. Cel mai performant sistem a folosit LSTM bidirecțional pe încorporări Glove
+
+Memoria pe termen scurt LSTM este introdusă în 1991 (Hochreiter și Schmidhuber, 1997), care este o extensie mai puternică a rețelei neuronale recurente. Porțile din interiorul LSTM ar putea
+preveniți problema gradientului de dispariție, pentru a memora dependența de timp. LSTM a fost folosit în multe sarcini de procesare a limbajului natural, cum ar fi
+ca clasificare a sentimentelor, traducere neuronală, generare de limbă etc. Am dori, de asemenea, să folosim LSTM ca al doilea model puternic de bază pentru a compara și a raporta rezultatul. Setarea specifică
+este următoarea: intrarea este mapată de la codificatorul onehot într-un strat partajat de încorporare cu dimensiunea 140; unitățile ascunse ale LSTM sunt 64 și sunt urmărite de un strat de abandon cu o rată de 0,5.
+lungimea maximă a secvenței este de 140, astfel propozițiile ar fi fie tăiate, fie căptușite.
+
+
+
+Concluzie
+Limbajul jignitor și ostilitatea online sunt cruciale pe rețeaua socială. Proporția minoritară a naturii și a limbajului morfologic reprezintă dificultățile pentru a obține performanțe ridicate. Diversitatea și evoluția limbii la diferite
+vârstele este o altă provocare pentru sarcina de detectare a rețelelor sociale. Ca o concluzie, munca noastră arată rezultatele competitive în această sarcină partajată folosind procesarea personalizată a setului de date, precum și puterea
+de model preinstruit. În viața reală, datele etichetate sunt întotdeauna limitate și necesită muncă costisitoare pentru oameni. În acest caz, învățarea prin transfer este întotdeauna o opțiune bună pentru a începe. Adaptarea domeniului are, de asemenea, cunoștințe prealabile despre un anumit domeniu înainte de a face orice lucru de modelare la îndemână. Modul de ajustare a parametrilor nu este banal și există o mulțime de modalități mai eficiente de a fi explorate, care ar putea produce
+performanță mai bună.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

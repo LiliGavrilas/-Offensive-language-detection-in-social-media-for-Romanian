@@ -1,0 +1,31 @@
+ sursa: https://medialibrary.uantwerpen.be/oldcontent/container2712/files/Case%20Studies%20of%20Hate%20Speech%20on%20Social%20Media.pdf?fbclid=IwAR18kiYAift8oHaJEuDeJt-mq-kg7Ge48bqI9qm0TBnOgvQVNHvcvE6A3QU 
+ 
+ 
+				Studii de caz ale discursului de ură pe rețelele sociale: analiză și detectare automată
+				
+	In acest articol s-a studiat despre:
+		1)Cyberbullying         5)Flaming
+		2)Profanity				6)Gendertrolling
+		3)Dangerous Speech		7)Shitposting
+		4)HATE SPEECH
+		
+		
+		
+		
+	Partea I: Introducerea studiilor de caz
+	
+	S-au analizat 3 retele de socializare in 3 contexte diferite:
+		-Discurs de ură misogin în forumul Incels.me (50,000 mesaje)
+		-Discurs de ură de dreapta germană pe Twitter(50,000 tweet)
+		-Comentarii pe Facebook înainte de alegerile federale germane din 2017 (2.9 mio comentarii)
+		
+	Partea II: Metode de detectare a discursurilor de ură
+	
+	S-au aplicat algoritmi de detectie automata(ML)(incles.me si Twitter) iar comenariile de pe facebook s-au analizat la nivel lexicografic cu o detectie suficient de buna(84,08% si 92.5%).
+	
+	Problemele intalnite:
+	- Sistemele de detecție nu sunt încă suficient de fiabile risc de supra-blocare și sub-blocare datorită falsurilor pozitive și negative;
+	- Pentru a permite o aplicabilitate largă a acestor sisteme, este important să știm pe ce bază ia decizii clasificatorul;
+	- ANN poate depăși alte abordări, dar adesea nu sunt foarte transparente;
+	- Este posibil ca un algoritm instruit cu un anumit tip de discurs de ură să nu funcționeze bine pe un set de date diferit (Jaki & De Smedt 2018 vs. De Smedt & Jaki);
+	- Instrumentele automate de detectare nu iau în considerare multimodalitatea discursurilor de ură din social media
