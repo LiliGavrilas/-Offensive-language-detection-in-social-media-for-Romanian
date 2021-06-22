@@ -1,0 +1,54 @@
+Model selectat =  soft_voting_best3  and test coment " salut andrei esti prost "
+Output: Offensive
+A possible bad word from comment(same prediction as main comment): esti
+A possible bad word from comment(same prediction as main comment): prost
+
+C:\Users\ana_p\PycharmProjects\tiln\venv\Scripts\python.exe C:/Users/ana_p/PycharmProjects/tiln/main.py
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\ana_p\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\ana_p\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Avem 24000  linii citite corect
+ Offensive = 11946 
+ Nonoffensive = 11667
+23613 23613
+Multinomial Naive Bayes Train duration: 0.015595  sec  Test duration: 0.0  sec
+Multinomial Naive Bayes Offensive - TN: 2035 FN: 291 Precision: 87.489 % Recall: 93.606 % F1 score: 90.444190441481
+Multinomial Naive Bayes NonOffensive - TP: 2258 FP: 139 Precision: 94.201 % Recall: 88.584 % F1 score: 91.30619453456247
+Passive Aggressive Train duration: 0.068965  sec  Test duration: 0.0  sec
+Passive Aggressive Offensive - TN: 2200 FN: 126 Precision: 94.583 % Recall: 91.324 % F1 score: 92.92493442420135
+Passive Aggressive NonOffensive - TP: 2188 FP: 209 Precision: 91.281 % Recall: 94.555 % F1 score: 92.88915985062098
+SVM Train duration: 108.02339  sec  Test duration: 5.366569  sec
+SVM Offensive - TN: 2214 FN: 112 Precision: 95.185 % Recall: 92.597 % F1 score: 93.87316617141153
+SVM NonOffensive - TP: 2220 FP: 177 Precision: 92.616 % Recall: 95.197 % F1 score: 93.8887654422218
+Logistic Regression Train duration: 0.087181  sec  Test duration: 0.0  sec
+Logistic Regression Offensive - TN: 2170 FN: 156 Precision: 93.293 % Recall: 88.247 % F1 score: 90.69987188498403
+Logistic Regression NonOffensive - TP: 2108 FP: 289 Precision: 87.943 % Recall: 93.11 % F1 score: 90.45277051471116
+KNN Train duration: 0.0  sec  Test duration: 3.047602  sec
+KNN Offensive - TN: 1678 FN: 648 Precision: 72.141 % Recall: 93.743 % F1 score: 81.53545565575943
+KNN NonOffensive - TP: 2285 FP: 112 Precision: 95.327 % Recall: 77.907 % F1 score: 85.74114306660356
+AdaBoost Train duration: 3.661805  sec  Test duration: 0.100322  sec
+AdaBoost Offensive - TN: 2153 FN: 173 Precision: 92.562 % Recall: 75.783 % F1 score: 83.33631585137664
+AdaBoost NonOffensive - TP: 1709 FP: 688 Precision: 71.297 % Recall: 90.808 % F1 score: 79.8783254803985
+RandomForest Train duration: 0.385514  sec  Test duration: 0.046862  sec
+RandomForest Offensive - TN: 654 FN: 1672 Precision: 28.117 % Recall: 95.614 % F1 score: 43.45521878914742
+RandomForest NonOffensive - TP: 2367 FP: 30 Precision: 98.748 % Recall: 58.604 % F1 score: 73.55518572372769
+DecisionTree Train duration: 7.90434  sec  Test duration: 0.0  sec
+DecisionTree Offensive - TN: 2181 FN: 145 Precision: 93.766 % Recall: 87.31 % F1 score: 90.42291038017186
+DecisionTree NonOffensive - TP: 2080 FP: 317 Precision: 86.775 % Recall: 93.483 % F1 score: 90.00418649935094
+HardVotingAll Train duration: 113.032943  sec  Test duration: 7.837428  sec
+HardVotingAll Offensive - TN: 2209 FN: 117 Precision: 94.97 % Recall: 92.118 % F1 score: 93.52226182331309
+HardVotingAll NonOffensive - TP: 2208 FP: 189 Precision: 92.115 % Recall: 94.968 % F1 score: 93.51974599509309
+HardVotingBest3 Train duration: 93.876241  sec  Test duration: 5.517393  sec
+HardVotingBest3 Offensive - TN: 2212 FN: 114 Precision: 95.099 % Recall: 92.824 % F1 score: 93.94772939980736
+HardVotingBest3 NonOffensive - TP: 2226 FP: 171 Precision: 92.866 % Recall: 95.128 % F1 score: 93.98339146994054
+SoftVotingAll Train duration: 493.395771  sec  Test duration: 10.098233  sec
+SoftVotingAll Offensive - TN: 2186 FN: 140 Precision: 93.981 % Recall: 92.706 % F1 score: 93.33914612158317
+SoftVotingAll NonOffensive - TP: 2225 FP: 172 Precision: 92.824 % Recall: 94.08 % F1 score: 93.44777982279673
+SoftVotingBest3 Train duration: 569.456005  sec  Test duration: 7.037647  sec
+SoftVotingBest3 Offensive - TN: 2189 FN: 137 Precision: 94.11 % Recall: 93.507 % F1 score: 93.80753098066805
+SoftVotingBest3 NonOffensive - TP: 2245 FP: 152 Precision: 93.659 % Recall: 94.249 % F1 score: 93.95307374885581
+
+Process finished with exit code 0
